@@ -1,0 +1,44 @@
+{
+  "name": "homebridge-tado-presence",
+  "version": "0.0.1",
+  "description": "Tado presence (home/away) switch plugin for homebridge: https://github.com/nfarina/homebridge",
+  "license": "MIT",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/itavero/homebridge-tado-presence.git"
+  },
+  "bugs": {
+    "url": "http://github.com/itavero/homebridge-tado-presence/issues"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "request": "^2.65.0",
+    "request-promise-native": "^1.0.8"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "prettier": "^1.18.2",
+    "rollup": "^1.15.4",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^5.0.2"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  }
+}

@@ -16,8 +16,23 @@ Also, I think it will be pretty easy to spot for the Tado engineers that this pl
 Besides that I need to make a tool to clean up the fake mobile device if, for whatever reason, you decide to stop using this plugin.
 
 ## Installation and usage
-_To Do_ : Document this! 😉
+_To Do_ : Publish this package somewhere once it is finished.
+
+Add the following accessory to your Homebridge config file, using your Tado credentials:
+```json
+{
+  "accessories": [
+    {
+      "accessory": "TadoPresence",
+      "name": "My Tado Heating System",
+      "email": "account@example.com",
+      "password": "my-super-secret-password"
+    }
+  ]
+}
+```
 
 ### Considerations / remarks
 * The location of your Tado home is determined on power up. If it is changed, you need to restart Homebridge.
 * A "fake" mobile device named "HomeBridge" will be added to your account.
+* This is the first project I've ever done in TypeScript.. I'm sure a lot of things need to be cleaned up. 🧹
