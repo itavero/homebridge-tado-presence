@@ -1,3 +1,5 @@
+> **ARCHIVED**: Tado now offers a button in their own app to toggle this behavior. For me this is good enough, so I'm not planning to continue to work on this particular Homebridge plugin.
+
 # Homebridge Tado Presence 🔥
 Presents a control in HomeKit to switch your Tado system between Home and Away mode.
 This means you can automate the presence using geofencing triggers from HomeKit.
